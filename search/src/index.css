@@ -1,0 +1,97 @@
+*:focus {
+  outline: none;
+}
+
+body {
+  text-align: center;
+  align-items: center;
+  font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+  color: hsl(27, 89%, calc(48% + (48% * -.3)));
+}
+
+h1 {
+  font-size: 2em;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  width: 100%;
+  padding: 2px 5px;
+  border: none;
+}
+
+.search-form {
+  max-width: 460px;
+  display: flex;
+  margin: 0 auto 32px;
+  align-items: center;
+  font-size: 1em;
+  background-color: none;
+  padding: 5px 10px;
+  border-radius: calc(0.5 * 44px);
+  box-shadow: 0 1px 6px 0 #20212447;
+  border: none;
+}
+
+.search-form button {
+  border: none;
+  padding: 0px 10px;
+  border-radius: calc(0.5 * 44px);
+  cursor: pointer;
+  color: hsl(27, 89%, calc(48% + (48% * -.3)));
+}
+
+.photo-container  {
+  display: flex;
+  padding: 10px;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+.photo-container div {
+  padding: 10px;
+}
+
+.photo-container ul {
+  width: 700px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.photo-container ul li {
+  width: 220px;
+  height: 165px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.photo-container ul img {
+  width: 100%;
+  transform: scale(1.25);
+  transition: transform 1.25s;
+}
+
+.photo-container li:hover img {
+  transform: scale(1.65);
+}
+
+.photo-container .not-found {
+  width: 100%;
+}
+
+.nav-link-selected {
+  filter: blur(4px);
+
+}
+
+
